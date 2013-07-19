@@ -38,8 +38,16 @@
 // RESULT:      UIImage
 //
 -(UIImage*) markerImage{
-    NSString *imgName = [NSString stringWithFormat:@"marker_%i.png",self.markerType];
-    //caching image
-    return [UIImage imageNamed:imgName];
+    return [NLContact allMarkers][self.markerType];
 }
+
++(NSArray*) allMarkers{
+    //FUUUUU
+    static NSArray *allMarker = nil;
+    if (allMarker==nil) {
+        allMarker = [@[[UIImage imageNamed:@"marker0.png"],[UIImage imageNamed:@"marker1.png"]] retain];
+    }
+    return allMarker;
+}
+
 @end

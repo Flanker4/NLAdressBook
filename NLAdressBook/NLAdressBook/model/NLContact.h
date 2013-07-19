@@ -13,7 +13,6 @@
 typedef NS_ENUM(NSInteger, NLMarkerType){
     NLMarkerTypeNone,
     NLMarkerTypeFirst,
-    NLMarkerTypeSec
 };
 
 @interface NLContact : NSManagedObject
@@ -30,4 +29,5 @@ typedef NS_ENUM(NSInteger, NLMarkerType){
 // RESULT:      UIImage
 //
 -(UIImage*) markerImage;
++(NSArray*) allMarkers;
 @end

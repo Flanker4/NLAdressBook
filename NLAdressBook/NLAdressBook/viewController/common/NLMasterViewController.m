@@ -7,8 +7,7 @@
 //
 
 #import "NLMasterViewController.h"
-
-#import "NLDetailViewController.h"
+#import "NLContactViewController.h"
 #import "NLContactCell.h"
 
 @interface NLMasterViewController ()
@@ -30,16 +29,13 @@
     return self;
 }
 							
-- (void)dealloc
-{
-    [_detailViewController release];
+- (void)dealloc{
     [_fetchedResultsController release];
     [_managedObjectContext release];
     [super dealloc];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -48,36 +44,23 @@
     self.navigationItem.rightBarButtonItem = addButton;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //[self.fetchedResultsController performFetch:nil];
+    [self.tableView reloadData];
 }
 
-- (void)insertNewObject:(id)sender
-{
-    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-    NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NLContact *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-    
-    // If appropriate, configure the new managed object.
-    // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-   newManagedObject.firstName = @"Name";
-   newManagedObject.lastName = @"SurName";
-    newManagedObject.patrName = @"PatrName";
-    
-    
-    // Save the context.
-    NSError *error = nil;
-    if (![context save:&error]) {
-         // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
+-(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+    return YES;
 }
 
-#pragma mark - Table View
+
+
+
+
+//
+// MARK: - UITABLEVIEW
+//
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return [[self.fetchedResultsController sections] count];
@@ -96,14 +79,12 @@
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
         [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
@@ -118,30 +99,23 @@
     }   
 }
 
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath{
     // The table view should not be re-orderable.
     return NO;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    if (!self.detailViewController) {
-	        self.detailViewController = [[[NLDetailViewController alloc] initWithNibName:@"NLDetailViewController_iPhone" bundle:nil] autorelease];
-	    }
-        self.detailViewController.detailItem = object;
-        [self.navigationController pushViewController:self.detailViewController animated:YES];
-    } else {
-        self.detailViewController.detailItem = object;
-    }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NLContact *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    [self openContact:object];
 }
 
-#pragma mark - Fetched results controller
 
-- (NSFetchedResultsController *)fetchedResultsController
-{
+
+
+//
+// MARK: - Fetched results controller
+//
+- (NSFetchedResultsController *)fetchedResultsController{
     if (_fetchedResultsController != nil) {
         return _fetchedResultsController;
     }
@@ -155,8 +129,12 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:NO] autorelease];
-    NSArray *sortDescriptors = @[sortDescriptor];
+    NSSortDescriptor *sortName = [[[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:NO] autorelease];
+    NSSortDescriptor *sortLastName = [[[NSSortDescriptor alloc] initWithKey:@"lastName" ascending:NO] autorelease];
+    NSSortDescriptor *sortPartName = [[[NSSortDescriptor alloc] initWithKey:@"patrName" ascending:NO] autorelease];
+    
+    
+    NSArray *sortDescriptors = @[sortName,sortLastName,sortPartName];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     
@@ -177,8 +155,7 @@
     return _fetchedResultsController;
 }    
 
-- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
-{
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller{
     [self.tableView beginUpdates];
 }
 
@@ -198,8 +175,7 @@
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
        atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
-      newIndexPath:(NSIndexPath *)newIndexPath
-{
+      newIndexPath:(NSIndexPath *)newIndexPath{
     UITableView *tableView = self.tableView;
     
     switch(type) {
@@ -222,24 +198,30 @@
     }
 }
 
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
     [self.tableView endUpdates];
 }
 
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
-}
- */
+
+//
+// MARK: - Help
+//
+
 
 - (void)configureCell:(NLContactCell *)cell atIndexPath:(NSIndexPath *)indexPath{
     NLContact* contact = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [cell fillFromContact:contact withIndex:indexPath];
 }
 
+-(void) openContact:(NLContact*)contact{
+    NLContactViewController *vc = [[[NLContactViewController alloc] initWithContact:contact] autorelease];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+//
+// MARK: - user interaction
+//
+- (void)insertNewObject:(id)sender{
+    [self openContact:nil];
+}
 @end

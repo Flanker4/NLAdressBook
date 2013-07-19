@@ -10,7 +10,7 @@
 #import "NLAppDelegate+DataProvider.h"
 #import "NLMasterViewController.h"
 
-#import "NLDetailViewController.h"
+
 
 @implementation NLAppDelegate
 
@@ -28,29 +28,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    application.statusBarHidden=YES;
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        NLMasterViewController *masterViewController = [[[NLMasterViewController alloc] initWithNibName:@"NLMasterViewController_iPhone" bundle:nil] autorelease];
-        self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
-        self.window.rootViewController = self.navigationController;
+    NLMasterViewController *masterViewController = [[[NLMasterViewController alloc] initWithNibName:@"NLMasterViewController" bundle:nil] autorelease];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+    self.window.rootViewController = self.navigationController;
         masterViewController.managedObjectContext = self.managedObjectContext;
-    } else {
-        NLMasterViewController *masterViewController = [[[NLMasterViewController alloc] initWithNibName:@"NLMasterViewController_iPad" bundle:nil] autorelease];
-        UINavigationController *masterNavigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
-        
-        NLDetailViewController *detailViewController = [[[NLDetailViewController alloc] initWithNibName:@"NLDetailViewController_iPad" bundle:nil] autorelease];
-        UINavigationController *detailNavigationController = [[[UINavigationController alloc] initWithRootViewController:detailViewController] autorelease];
-    	
-    	masterViewController.detailViewController = detailViewController;
-        
-        self.splitViewController = [[[UISplitViewController alloc] init] autorelease];
-        self.splitViewController.delegate = detailViewController;
-        self.splitViewController.viewControllers = @[masterNavigationController, detailNavigationController];
-        
-        self.window.rootViewController = self.splitViewController;
-        masterViewController.managedObjectContext = self.managedObjectContext;
-    }
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1019B31799ADCE0066A6A2 /* NLContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1019B11799ADCE0066A6A2 /* NLContactViewController.m */; };
+		0E1019B41799ADCE0066A6A2 /* NLContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1019B21799ADCE0066A6A2 /* NLContactViewController.xib */; };
+		0E1019BB1799AE580066A6A2 /* NLEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1019B91799AE580066A6A2 /* NLEditCell.m */; };
+		0E4239961799C871000EB703 /* marker0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E4239941799C871000EB703 /* marker0.png */; };
+		0E4239971799C871000EB703 /* marker1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E4239951799C871000EB703 /* marker1.png */; };
 		0E9B4AD517998BCF0058385C /* NLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AC117998BCF0058385C /* NLAppDelegate.m */; };
 		0E9B4AD617998BCF0058385C /* NLAdressBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AC317998BCF0058385C /* NLAdressBook.xcdatamodeld */; };
-		0E9B4AD717998BCF0058385C /* NLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AC917998BCF0058385C /* NLDetailViewController.m */; };
 		0E9B4AD817998BCF0058385C /* NLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4ACB17998BCF0058385C /* NLMasterViewController.m */; };
 		0E9B4AE017998C370058385C /* NLAppDelegate+DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4ADE17998C370058385C /* NLAppDelegate+DataProvider.m */; };
 		0E9B4AE3179991EC0058385C /* NLContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AE2179991EC0058385C /* NLContact.m */; };
@@ -26,10 +30,7 @@
 		0EFB291517998A58008BFF29 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB291417998A58008BFF29 /* Default.png */; };
 		0EFB291717998A58008BFF29 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB291617998A58008BFF29 /* Default@2x.png */; };
 		0EFB291917998A58008BFF29 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB291817998A58008BFF29 /* Default-568h@2x.png */; };
-		0EFB292517998A58008BFF29 /* NLMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292317998A58008BFF29 /* NLMasterViewController_iPhone.xib */; };
-		0EFB292817998A58008BFF29 /* NLMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292617998A58008BFF29 /* NLMasterViewController_iPad.xib */; };
-		0EFB292B17998A58008BFF29 /* NLDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292917998A58008BFF29 /* NLDetailViewController_iPhone.xib */; };
-		0EFB292E17998A58008BFF29 /* NLDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292C17998A58008BFF29 /* NLDetailViewController_iPad.xib */; };
+		0EFB292517998A58008BFF29 /* NLMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292317998A58008BFF29 /* NLMasterViewController.xib */; };
 		0EFB293617998A59008BFF29 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB293517998A59008BFF29 /* SenTestingKit.framework */; };
 		0EFB293717998A59008BFF29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290017998A58008BFF29 /* UIKit.framework */; };
 		0EFB293817998A59008BFF29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290217998A58008BFF29 /* Foundation.framework */; };
@@ -49,15 +50,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1019B01799ADCE0066A6A2 /* NLContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLContactViewController.h; sourceTree = "<group>"; };
+		0E1019B11799ADCE0066A6A2 /* NLContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLContactViewController.m; sourceTree = "<group>"; };
+		0E1019B21799ADCE0066A6A2 /* NLContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NLContactViewController.xib; sourceTree = "<group>"; };
+		0E1019B81799AE580066A6A2 /* NLEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLEditCell.h; path = cell/NLEditCell.h; sourceTree = "<group>"; };
+		0E1019B91799AE580066A6A2 /* NLEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLEditCell.m; path = cell/NLEditCell.m; sourceTree = "<group>"; };
+		0E4239941799C871000EB703 /* marker0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker0.png; sourceTree = "<group>"; };
+		0E4239951799C871000EB703 /* marker1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker1.png; sourceTree = "<group>"; };
 		0E9B4AC017998BCF0058385C /* NLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLAppDelegate.h; sourceTree = "<group>"; };
 		0E9B4AC117998BCF0058385C /* NLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLAppDelegate.m; sourceTree = "<group>"; };
 		0E9B4AC417998BCF0058385C /* NLAdressBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NLAdressBook.xcdatamodel; sourceTree = "<group>"; };
-		0E9B4AC817998BCF0058385C /* NLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLDetailViewController.h; sourceTree = "<group>"; };
-		0E9B4AC917998BCF0058385C /* NLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLDetailViewController.m; sourceTree = "<group>"; };
 		0E9B4ACA17998BCF0058385C /* NLMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLMasterViewController.h; sourceTree = "<group>"; };
 		0E9B4ACB17998BCF0058385C /* NLMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLMasterViewController.m; sourceTree = "<group>"; };
-		0E9B4ADD17998C370058385C /* NLAppDelegate+DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NLAppDelegate+DataProvider.h"; sourceTree = "<group>"; };
-		0E9B4ADE17998C370058385C /* NLAppDelegate+DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NLAppDelegate+DataProvider.m"; sourceTree = "<group>"; };
+		0E9B4ADD17998C370058385C /* NLAppDelegate+DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NLAppDelegate+DataProvider.h"; path = "../common/NLAppDelegate+DataProvider.h"; sourceTree = "<group>"; };
+		0E9B4ADE17998C370058385C /* NLAppDelegate+DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NLAppDelegate+DataProvider.m"; path = "../common/NLAppDelegate+DataProvider.m"; sourceTree = "<group>"; };
 		0E9B4AE1179991EC0058385C /* NLContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLContact.h; sourceTree = "<group>"; };
 		0E9B4AE2179991EC0058385C /* NLContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLContact.m; sourceTree = "<group>"; };
 		0E9B4AE6179994350058385C /* NLContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLContactCell.h; path = cell/NLContactCell.h; sourceTree = "<group>"; };
@@ -75,10 +81,7 @@
 		0EFB291417998A58008BFF29 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0EFB291617998A58008BFF29 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0EFB291817998A58008BFF29 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0EFB292417998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLMasterViewController_iPhone.xib; sourceTree = "<group>"; };
-		0EFB292717998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLMasterViewController_iPad.xib; sourceTree = "<group>"; };
-		0EFB292A17998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLDetailViewController_iPhone.xib; sourceTree = "<group>"; };
-		0EFB292D17998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		0EFB292417998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLMasterViewController.xib; sourceTree = "<group>"; };
 		0EFB293417998A59008BFF29 /* NLAdressBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NLAdressBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFB293517998A59008BFF29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		0EFB293E17998A59008BFF29 /* NLAdressBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NLAdressBookTests-Info.plist"; sourceTree = "<group>"; };
@@ -113,13 +116,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1019AB1799AC2C0066A6A2 /* MasterVC */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B4AE5179993F10058385C /* cell */,
+				0EFB292317998A58008BFF29 /* NLMasterViewController.xib */,
+				0E9B4ACA17998BCF0058385C /* NLMasterViewController.h */,
+				0E9B4ACB17998BCF0058385C /* NLMasterViewController.m */,
+			);
+			name = MasterVC;
+			path = common;
+			sourceTree = "<group>";
+		};
+		0E1019AD1799AC380066A6A2 /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				0E1019B71799AE1B0066A6A2 /* cell */,
+				0E1019B01799ADCE0066A6A2 /* NLContactViewController.h */,
+				0E1019B11799ADCE0066A6A2 /* NLContactViewController.m */,
+				0E1019B21799ADCE0066A6A2 /* NLContactViewController.xib */,
+			);
+			name = DetailVC;
+			path = common;
+			sourceTree = "<group>";
+		};
+		0E1019AE1799AC860066A6A2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
+			path = ../viewController/common;
+			sourceTree = "<group>";
+		};
+		0E1019AF1799AC940066A6A2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B4AC017998BCF0058385C /* NLAppDelegate.h */,
+				0E9B4AC117998BCF0058385C /* NLAppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		0E1019B71799AE1B0066A6A2 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0E1019B81799AE580066A6A2 /* NLEditCell.h */,
+				0E1019B91799AE580066A6A2 /* NLEditCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		0E9B4ABF17998BCF0058385C /* common */ = {
 			isa = PBXGroup;
 			children = (
-				0E9B4ADD17998C370058385C /* NLAppDelegate+DataProvider.h */,
-				0E9B4ADE17998C370058385C /* NLAppDelegate+DataProvider.m */,
-				0E9B4AC017998BCF0058385C /* NLAppDelegate.h */,
-				0E9B4AC117998BCF0058385C /* NLAppDelegate.m */,
+				0E1019AF1799AC940066A6A2 /* App */,
+				0E1019AE1799AC860066A6A2 /* Helper */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -127,6 +178,8 @@
 		0E9B4AC217998BCF0058385C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				0E9B4ADD17998C370058385C /* NLAppDelegate+DataProvider.h */,
+				0E9B4ADE17998C370058385C /* NLAppDelegate+DataProvider.m */,
 				0E9B4AC317998BCF0058385C /* NLAdressBook.xcdatamodeld */,
 				0E9B4AE1179991EC0058385C /* NLContact.h */,
 				0E9B4AE2179991EC0058385C /* NLContact.m */,
@@ -137,10 +190,8 @@
 		0E9B4AC517998BCF0058385C /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				0EFB292317998A58008BFF29 /* NLMasterViewController_iPhone.xib */,
-				0EFB292617998A58008BFF29 /* NLMasterViewController_iPad.xib */,
-				0EFB292917998A58008BFF29 /* NLDetailViewController_iPhone.xib */,
-				0EFB292C17998A58008BFF29 /* NLDetailViewController_iPad.xib */,
+				0E4239941799C871000EB703 /* marker0.png */,
+				0E4239951799C871000EB703 /* marker1.png */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -148,37 +199,10 @@
 		0E9B4AC617998BCF0058385C /* viewController */ = {
 			isa = PBXGroup;
 			children = (
-				0E9B4AC717998BCF0058385C /* common */,
-				0E9B4ACC17998BCF0058385C /* ipad */,
-				0E9B4ACD17998BCF0058385C /* iphone */,
+				0E1019AD1799AC380066A6A2 /* DetailVC */,
+				0E1019AB1799AC2C0066A6A2 /* MasterVC */,
 			);
 			path = viewController;
-			sourceTree = "<group>";
-		};
-		0E9B4AC717998BCF0058385C /* common */ = {
-			isa = PBXGroup;
-			children = (
-				0E9B4AE5179993F10058385C /* cell */,
-				0E9B4AC817998BCF0058385C /* NLDetailViewController.h */,
-				0E9B4AC917998BCF0058385C /* NLDetailViewController.m */,
-				0E9B4ACA17998BCF0058385C /* NLMasterViewController.h */,
-				0E9B4ACB17998BCF0058385C /* NLMasterViewController.m */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		0E9B4ACC17998BCF0058385C /* ipad */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ipad;
-			sourceTree = "<group>";
-		};
-		0E9B4ACD17998BCF0058385C /* iphone */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iphone;
 			sourceTree = "<group>";
 		};
 		0E9B4AE5179993F10058385C /* cell */ = {
@@ -227,8 +251,8 @@
 			children = (
 				0E9B4ABF17998BCF0058385C /* common */,
 				0E9B4AC217998BCF0058385C /* model */,
-				0E9B4AC517998BCF0058385C /* resource */,
 				0E9B4AC617998BCF0058385C /* viewController */,
+				0E9B4AC517998BCF0058385C /* resource */,
 				0EFB290917998A58008BFF29 /* Supporting Files */,
 			);
 			path = NLAdressBook;
@@ -343,11 +367,11 @@
 				0EFB291517998A58008BFF29 /* Default.png in Resources */,
 				0EFB291717998A58008BFF29 /* Default@2x.png in Resources */,
 				0EFB291917998A58008BFF29 /* Default-568h@2x.png in Resources */,
-				0EFB292517998A58008BFF29 /* NLMasterViewController_iPhone.xib in Resources */,
-				0EFB292817998A58008BFF29 /* NLMasterViewController_iPad.xib in Resources */,
-				0EFB292B17998A58008BFF29 /* NLDetailViewController_iPhone.xib in Resources */,
-				0EFB292E17998A58008BFF29 /* NLDetailViewController_iPad.xib in Resources */,
+				0EFB292517998A58008BFF29 /* NLMasterViewController.xib in Resources */,
 				0E9B4AEB179994580058385C /* NLContactCell.xib in Resources */,
+				0E1019B41799ADCE0066A6A2 /* NLContactViewController.xib in Resources */,
+				0E4239961799C871000EB703 /* marker0.png in Resources */,
+				0E4239971799C871000EB703 /* marker1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,11 +409,12 @@
 				0EFB290F17998A58008BFF29 /* main.m in Sources */,
 				0E9B4AD517998BCF0058385C /* NLAppDelegate.m in Sources */,
 				0E9B4AD617998BCF0058385C /* NLAdressBook.xcdatamodeld in Sources */,
-				0E9B4AD717998BCF0058385C /* NLDetailViewController.m in Sources */,
 				0E9B4AD817998BCF0058385C /* NLMasterViewController.m in Sources */,
 				0E9B4AE017998C370058385C /* NLAppDelegate+DataProvider.m in Sources */,
 				0E9B4AE3179991EC0058385C /* NLContact.m in Sources */,
 				0E9B4AE8179994350058385C /* NLContactCell.m in Sources */,
+				0E1019B31799ADCE0066A6A2 /* NLContactViewController.m in Sources */,
+				0E1019BB1799AE580066A6A2 /* NLEditCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,40 +447,13 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		0EFB292317998A58008BFF29 /* NLMasterViewController_iPhone.xib */ = {
+		0EFB292317998A58008BFF29 /* NLMasterViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0EFB292417998A58008BFF29 /* en */,
 			);
-			name = NLMasterViewController_iPhone.xib;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		0EFB292617998A58008BFF29 /* NLMasterViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EFB292717998A58008BFF29 /* en */,
-			);
-			name = NLMasterViewController_iPad.xib;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		0EFB292917998A58008BFF29 /* NLDetailViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EFB292A17998A58008BFF29 /* en */,
-			);
-			name = NLDetailViewController_iPhone.xib;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		0EFB292C17998A58008BFF29 /* NLDetailViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EFB292D17998A58008BFF29 /* en */,
-			);
-			name = NLDetailViewController_iPad.xib;
-			path = ..;
+			name = NLMasterViewController.xib;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		0EFB293F17998A59008BFF29 /* InfoPlist.strings */ = {

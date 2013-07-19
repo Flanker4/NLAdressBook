@@ -14,7 +14,6 @@
 
 @interface NLMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
-@property (retain, nonatomic) NLDetailViewController *detailViewController;
 
 @property (retain, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (retain, nonatomic) NSManagedObjectContext *managedObjectContext;
