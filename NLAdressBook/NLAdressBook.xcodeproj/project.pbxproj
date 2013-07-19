@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E9B4AD517998BCF0058385C /* NLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AC117998BCF0058385C /* NLAppDelegate.m */; };
+		0E9B4AD617998BCF0058385C /* NLAdressBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AC317998BCF0058385C /* NLAdressBook.xcdatamodeld */; };
+		0E9B4AD717998BCF0058385C /* NLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AC917998BCF0058385C /* NLDetailViewController.m */; };
+		0E9B4AD817998BCF0058385C /* NLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4ACB17998BCF0058385C /* NLMasterViewController.m */; };
+		0E9B4AE017998C370058385C /* NLAppDelegate+DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4ADE17998C370058385C /* NLAppDelegate+DataProvider.m */; };
+		0E9B4AE3179991EC0058385C /* NLContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AE2179991EC0058385C /* NLContact.m */; };
+		0E9B4AE4179991EC0058385C /* NLContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AE2179991EC0058385C /* NLContact.m */; };
+		0E9B4AE8179994350058385C /* NLContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AE7179994350058385C /* NLContactCell.m */; };
+		0E9B4AE9179994350058385C /* NLContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AE7179994350058385C /* NLContactCell.m */; };
+		0E9B4AEB179994580058385C /* NLContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9B4AEA179994580058385C /* NLContactCell.xib */; };
+		0EFB290117998A58008BFF29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290017998A58008BFF29 /* UIKit.framework */; };
+		0EFB290317998A58008BFF29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290217998A58008BFF29 /* Foundation.framework */; };
+		0EFB290517998A58008BFF29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290417998A58008BFF29 /* CoreGraphics.framework */; };
+		0EFB290717998A58008BFF29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290617998A58008BFF29 /* CoreData.framework */; };
+		0EFB290D17998A58008BFF29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB290B17998A58008BFF29 /* InfoPlist.strings */; };
+		0EFB290F17998A58008BFF29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFB290E17998A58008BFF29 /* main.m */; };
+		0EFB291517998A58008BFF29 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB291417998A58008BFF29 /* Default.png */; };
+		0EFB291717998A58008BFF29 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB291617998A58008BFF29 /* Default@2x.png */; };
+		0EFB291917998A58008BFF29 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB291817998A58008BFF29 /* Default-568h@2x.png */; };
+		0EFB292517998A58008BFF29 /* NLMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292317998A58008BFF29 /* NLMasterViewController_iPhone.xib */; };
+		0EFB292817998A58008BFF29 /* NLMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292617998A58008BFF29 /* NLMasterViewController_iPad.xib */; };
+		0EFB292B17998A58008BFF29 /* NLDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292917998A58008BFF29 /* NLDetailViewController_iPhone.xib */; };
+		0EFB292E17998A58008BFF29 /* NLDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB292C17998A58008BFF29 /* NLDetailViewController_iPad.xib */; };
+		0EFB293617998A59008BFF29 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB293517998A59008BFF29 /* SenTestingKit.framework */; };
+		0EFB293717998A59008BFF29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290017998A58008BFF29 /* UIKit.framework */; };
+		0EFB293817998A59008BFF29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290217998A58008BFF29 /* Foundation.framework */; };
+		0EFB293917998A59008BFF29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290617998A58008BFF29 /* CoreData.framework */; };
+		0EFB294117998A59008BFF29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EFB293F17998A59008BFF29 /* InfoPlist.strings */; };
+		0EFB294417998A59008BFF29 /* NLAdressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFB294317998A59008BFF29 /* NLAdressBookTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EFB293A17998A59008BFF29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EFB28F317998A58008BFF29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EFB28FB17998A58008BFF29;
+			remoteInfo = NLAdressBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9B4AC017998BCF0058385C /* NLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLAppDelegate.h; sourceTree = "<group>"; };
+		0E9B4AC117998BCF0058385C /* NLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLAppDelegate.m; sourceTree = "<group>"; };
+		0E9B4AC417998BCF0058385C /* NLAdressBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NLAdressBook.xcdatamodel; sourceTree = "<group>"; };
+		0E9B4AC817998BCF0058385C /* NLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLDetailViewController.h; sourceTree = "<group>"; };
+		0E9B4AC917998BCF0058385C /* NLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLDetailViewController.m; sourceTree = "<group>"; };
+		0E9B4ACA17998BCF0058385C /* NLMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLMasterViewController.h; sourceTree = "<group>"; };
+		0E9B4ACB17998BCF0058385C /* NLMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLMasterViewController.m; sourceTree = "<group>"; };
+		0E9B4ADD17998C370058385C /* NLAppDelegate+DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NLAppDelegate+DataProvider.h"; sourceTree = "<group>"; };
+		0E9B4ADE17998C370058385C /* NLAppDelegate+DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NLAppDelegate+DataProvider.m"; sourceTree = "<group>"; };
+		0E9B4AE1179991EC0058385C /* NLContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLContact.h; sourceTree = "<group>"; };
+		0E9B4AE2179991EC0058385C /* NLContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLContact.m; sourceTree = "<group>"; };
+		0E9B4AE6179994350058385C /* NLContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLContactCell.h; path = cell/NLContactCell.h; sourceTree = "<group>"; };
+		0E9B4AE7179994350058385C /* NLContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLContactCell.m; path = cell/NLContactCell.m; sourceTree = "<group>"; };
+		0E9B4AEA179994580058385C /* NLContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NLContactCell.xib; path = cell/NLContactCell.xib; sourceTree = "<group>"; };
+		0EFB28FC17998A58008BFF29 /* NLAdressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLAdressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EFB290017998A58008BFF29 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0EFB290217998A58008BFF29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0EFB290417998A58008BFF29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0EFB290617998A58008BFF29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0EFB290A17998A58008BFF29 /* NLAdressBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NLAdressBook-Info.plist"; sourceTree = "<group>"; };
+		0EFB290C17998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0EFB290E17998A58008BFF29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0EFB291017998A58008BFF29 /* NLAdressBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NLAdressBook-Prefix.pch"; sourceTree = "<group>"; };
+		0EFB291417998A58008BFF29 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0EFB291617998A58008BFF29 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0EFB291817998A58008BFF29 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0EFB292417998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLMasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		0EFB292717998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLMasterViewController_iPad.xib; sourceTree = "<group>"; };
+		0EFB292A17998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLDetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		0EFB292D17998A58008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NLDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		0EFB293417998A59008BFF29 /* NLAdressBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NLAdressBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EFB293517998A59008BFF29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0EFB293E17998A59008BFF29 /* NLAdressBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NLAdressBookTests-Info.plist"; sourceTree = "<group>"; };
+		0EFB294017998A59008BFF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0EFB294217998A59008BFF29 /* NLAdressBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAdressBookTests.h; sourceTree = "<group>"; };
+		0EFB294317998A59008BFF29 /* NLAdressBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLAdressBookTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EFB28F917998A58008BFF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFB290117998A58008BFF29 /* UIKit.framework in Frameworks */,
+				0EFB290317998A58008BFF29 /* Foundation.framework in Frameworks */,
+				0EFB290517998A58008BFF29 /* CoreGraphics.framework in Frameworks */,
+				0EFB290717998A58008BFF29 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFB293017998A59008BFF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFB293617998A59008BFF29 /* SenTestingKit.framework in Frameworks */,
+				0EFB293717998A59008BFF29 /* UIKit.framework in Frameworks */,
+				0EFB293817998A59008BFF29 /* Foundation.framework in Frameworks */,
+				0EFB293917998A59008BFF29 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E9B4ABF17998BCF0058385C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B4ADD17998C370058385C /* NLAppDelegate+DataProvider.h */,
+				0E9B4ADE17998C370058385C /* NLAppDelegate+DataProvider.m */,
+				0E9B4AC017998BCF0058385C /* NLAppDelegate.h */,
+				0E9B4AC117998BCF0058385C /* NLAppDelegate.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		0E9B4AC217998BCF0058385C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B4AC317998BCF0058385C /* NLAdressBook.xcdatamodeld */,
+				0E9B4AE1179991EC0058385C /* NLContact.h */,
+				0E9B4AE2179991EC0058385C /* NLContact.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0E9B4AC517998BCF0058385C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				0EFB292317998A58008BFF29 /* NLMasterViewController_iPhone.xib */,
+				0EFB292617998A58008BFF29 /* NLMasterViewController_iPad.xib */,
+				0EFB292917998A58008BFF29 /* NLDetailViewController_iPhone.xib */,
+				0EFB292C17998A58008BFF29 /* NLDetailViewController_iPad.xib */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		0E9B4AC617998BCF0058385C /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B4AC717998BCF0058385C /* common */,
+				0E9B4ACC17998BCF0058385C /* ipad */,
+				0E9B4ACD17998BCF0058385C /* iphone */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		0E9B4AC717998BCF0058385C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B4AE5179993F10058385C /* cell */,
+				0E9B4AC817998BCF0058385C /* NLDetailViewController.h */,
+				0E9B4AC917998BCF0058385C /* NLDetailViewController.m */,
+				0E9B4ACA17998BCF0058385C /* NLMasterViewController.h */,
+				0E9B4ACB17998BCF0058385C /* NLMasterViewController.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		0E9B4ACC17998BCF0058385C /* ipad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ipad;
+			sourceTree = "<group>";
+		};
+		0E9B4ACD17998BCF0058385C /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iphone;
+			sourceTree = "<group>";
+		};
+		0E9B4AE5179993F10058385C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B4AE6179994350058385C /* NLContactCell.h */,
+				0E9B4AE7179994350058385C /* NLContactCell.m */,
+				0E9B4AEA179994580058385C /* NLContactCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		0EFB28F117998A58008BFF29 = {
+			isa = PBXGroup;
+			children = (
+				0EFB290817998A58008BFF29 /* NLAdressBook */,
+				0EFB293C17998A59008BFF29 /* NLAdressBookTests */,
+				0EFB28FF17998A58008BFF29 /* Frameworks */,
+				0EFB28FD17998A58008BFF29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EFB28FD17998A58008BFF29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EFB28FC17998A58008BFF29 /* NLAdressBook.app */,
+				0EFB293417998A59008BFF29 /* NLAdressBookTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EFB28FF17998A58008BFF29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EFB290017998A58008BFF29 /* UIKit.framework */,
+				0EFB290217998A58008BFF29 /* Foundation.framework */,
+				0EFB290417998A58008BFF29 /* CoreGraphics.framework */,
+				0EFB290617998A58008BFF29 /* CoreData.framework */,
+				0EFB293517998A59008BFF29 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EFB290817998A58008BFF29 /* NLAdressBook */ = {
+			isa = PBXGroup;
+			children = (
+				0E9B4ABF17998BCF0058385C /* common */,
+				0E9B4AC217998BCF0058385C /* model */,
+				0E9B4AC517998BCF0058385C /* resource */,
+				0E9B4AC617998BCF0058385C /* viewController */,
+				0EFB290917998A58008BFF29 /* Supporting Files */,
+			);
+			path = NLAdressBook;
+			sourceTree = "<group>";
+		};
+		0EFB290917998A58008BFF29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EFB290A17998A58008BFF29 /* NLAdressBook-Info.plist */,
+				0EFB290B17998A58008BFF29 /* InfoPlist.strings */,
+				0EFB290E17998A58008BFF29 /* main.m */,
+				0EFB291017998A58008BFF29 /* NLAdressBook-Prefix.pch */,
+				0EFB291417998A58008BFF29 /* Default.png */,
+				0EFB291617998A58008BFF29 /* Default@2x.png */,
+				0EFB291817998A58008BFF29 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EFB293C17998A59008BFF29 /* NLAdressBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EFB294217998A59008BFF29 /* NLAdressBookTests.h */,
+				0EFB294317998A59008BFF29 /* NLAdressBookTests.m */,
+				0EFB293D17998A59008BFF29 /* Supporting Files */,
+			);
+			path = NLAdressBookTests;
+			sourceTree = "<group>";
+		};
+		0EFB293D17998A59008BFF29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EFB293E17998A59008BFF29 /* NLAdressBookTests-Info.plist */,
+				0EFB293F17998A59008BFF29 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EFB28FB17998A58008BFF29 /* NLAdressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EFB294717998A59008BFF29 /* Build configuration list for PBXNativeTarget "NLAdressBook" */;
+			buildPhases = (
+				0EFB28F817998A58008BFF29 /* Sources */,
+				0EFB28F917998A58008BFF29 /* Frameworks */,
+				0EFB28FA17998A58008BFF29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NLAdressBook;
+			productName = NLAdressBook;
+			productReference = 0EFB28FC17998A58008BFF29 /* NLAdressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0EFB293317998A59008BFF29 /* NLAdressBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EFB294A17998A59008BFF29 /* Build configuration list for PBXNativeTarget "NLAdressBookTests" */;
+			buildPhases = (
+				0EFB292F17998A59008BFF29 /* Sources */,
+				0EFB293017998A59008BFF29 /* Frameworks */,
+				0EFB293117998A59008BFF29 /* Resources */,
+				0EFB293217998A59008BFF29 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EFB293B17998A59008BFF29 /* PBXTargetDependency */,
+			);
+			name = NLAdressBookTests;
+			productName = NLAdressBookTests;
+			productReference = 0EFB293417998A59008BFF29 /* NLAdressBookTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EFB28F317998A58008BFF29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NL;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Neo Line";
+			};
+			buildConfigurationList = 0EFB28F617998A58008BFF29 /* Build configuration list for PBXProject "NLAdressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0EFB28F117998A58008BFF29;
+			productRefGroup = 0EFB28FD17998A58008BFF29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EFB28FB17998A58008BFF29 /* NLAdressBook */,
+				0EFB293317998A59008BFF29 /* NLAdressBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EFB28FA17998A58008BFF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFB290D17998A58008BFF29 /* InfoPlist.strings in Resources */,
+				0EFB291517998A58008BFF29 /* Default.png in Resources */,
+				0EFB291717998A58008BFF29 /* Default@2x.png in Resources */,
+				0EFB291917998A58008BFF29 /* Default-568h@2x.png in Resources */,
+				0EFB292517998A58008BFF29 /* NLMasterViewController_iPhone.xib in Resources */,
+				0EFB292817998A58008BFF29 /* NLMasterViewController_iPad.xib in Resources */,
+				0EFB292B17998A58008BFF29 /* NLDetailViewController_iPhone.xib in Resources */,
+				0EFB292E17998A58008BFF29 /* NLDetailViewController_iPad.xib in Resources */,
+				0E9B4AEB179994580058385C /* NLContactCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFB293117998A59008BFF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFB294117998A59008BFF29 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EFB293217998A59008BFF29 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EFB28F817998A58008BFF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFB290F17998A58008BFF29 /* main.m in Sources */,
+				0E9B4AD517998BCF0058385C /* NLAppDelegate.m in Sources */,
+				0E9B4AD617998BCF0058385C /* NLAdressBook.xcdatamodeld in Sources */,
+				0E9B4AD717998BCF0058385C /* NLDetailViewController.m in Sources */,
+				0E9B4AD817998BCF0058385C /* NLMasterViewController.m in Sources */,
+				0E9B4AE017998C370058385C /* NLAppDelegate+DataProvider.m in Sources */,
+				0E9B4AE3179991EC0058385C /* NLContact.m in Sources */,
+				0E9B4AE8179994350058385C /* NLContactCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFB292F17998A59008BFF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFB294417998A59008BFF29 /* NLAdressBookTests.m in Sources */,
+				0E9B4AE4179991EC0058385C /* NLContact.m in Sources */,
+				0E9B4AE9179994350058385C /* NLContactCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EFB293B17998A59008BFF29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EFB28FB17998A58008BFF29 /* NLAdressBook */;
+			targetProxy = 0EFB293A17998A59008BFF29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0EFB290B17998A58008BFF29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFB290C17998A58008BFF29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0EFB292317998A58008BFF29 /* NLMasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFB292417998A58008BFF29 /* en */,
+			);
+			name = NLMasterViewController_iPhone.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0EFB292617998A58008BFF29 /* NLMasterViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFB292717998A58008BFF29 /* en */,
+			);
+			name = NLMasterViewController_iPad.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0EFB292917998A58008BFF29 /* NLDetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFB292A17998A58008BFF29 /* en */,
+			);
+			name = NLDetailViewController_iPhone.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0EFB292C17998A58008BFF29 /* NLDetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFB292D17998A58008BFF29 /* en */,
+			);
+			name = NLDetailViewController_iPad.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0EFB293F17998A59008BFF29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFB294017998A59008BFF29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EFB294517998A59008BFF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0EFB294617998A59008BFF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EFB294817998A59008BFF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NLAdressBook/NLAdressBook-Prefix.pch";
+				INFOPLIST_FILE = "NLAdressBook/NLAdressBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0EFB294917998A59008BFF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NLAdressBook/NLAdressBook-Prefix.pch";
+				INFOPLIST_FILE = "NLAdressBook/NLAdressBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0EFB294B17998A59008BFF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NLAdressBook.app/NLAdressBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NLAdressBook/NLAdressBook-Prefix.pch";
+				INFOPLIST_FILE = "NLAdressBookTests/NLAdressBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0EFB294C17998A59008BFF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NLAdressBook.app/NLAdressBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NLAdressBook/NLAdressBook-Prefix.pch";
+				INFOPLIST_FILE = "NLAdressBookTests/NLAdressBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EFB28F617998A58008BFF29 /* Build configuration list for PBXProject "NLAdressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFB294517998A59008BFF29 /* Debug */,
+				0EFB294617998A59008BFF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EFB294717998A59008BFF29 /* Build configuration list for PBXNativeTarget "NLAdressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFB294817998A59008BFF29 /* Debug */,
+				0EFB294917998A59008BFF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EFB294A17998A59008BFF29 /* Build configuration list for PBXNativeTarget "NLAdressBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFB294B17998A59008BFF29 /* Debug */,
+				0EFB294C17998A59008BFF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0E9B4AC317998BCF0058385C /* NLAdressBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0E9B4AC417998BCF0058385C /* NLAdressBook.xcdatamodel */,
+			);
+			currentVersion = 0E9B4AC417998BCF0058385C /* NLAdressBook.xcdatamodel */;
+			path = NLAdressBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0EFB28F317998A58008BFF29 /* Project object */;
+}
