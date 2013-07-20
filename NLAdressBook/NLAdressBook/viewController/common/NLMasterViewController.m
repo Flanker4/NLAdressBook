@@ -2,7 +2,7 @@
 //  NLMasterViewController.m
 //  NLAdressBook
 //
-//  Created by flanker on 19.07.13.
+//  Created by Boyko A.V. on 19.07.13.
 //  Copyright (c) 2013 Neo Line. All rights reserved.
 //
 
@@ -46,7 +46,7 @@
 
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    //[self.fetchedResultsController performFetch:nil];
+    [self.fetchedResultsController performFetch:nil];
     [self.tableView reloadData];
 }
 
@@ -129,12 +129,12 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortName = [[[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:NO] autorelease];
-    NSSortDescriptor *sortLastName = [[[NSSortDescriptor alloc] initWithKey:@"lastName" ascending:NO] autorelease];
-    NSSortDescriptor *sortPartName = [[[NSSortDescriptor alloc] initWithKey:@"patrName" ascending:NO] autorelease];
+    NSSortDescriptor *sortName = [[[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:YES] autorelease];
+    NSSortDescriptor *sortLastName = [[[NSSortDescriptor alloc] initWithKey:@"lastName" ascending:YES] autorelease];
+    NSSortDescriptor *sortPartName = [[[NSSortDescriptor alloc] initWithKey:@"patrName" ascending:YES] autorelease];
     
     
-    NSArray *sortDescriptors = @[sortName,sortLastName,sortPartName];
+    NSArray *sortDescriptors = @[sortLastName,sortName,sortPartName];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     
@@ -206,8 +206,6 @@
 //
 // MARK: - Help
 //
-
-
 - (void)configureCell:(NLContactCell *)cell atIndexPath:(NSIndexPath *)indexPath{
     NLContact* contact = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [cell fillFromContact:contact withIndex:indexPath];
@@ -215,7 +213,11 @@
 
 -(void) openContact:(NLContact*)contact{
     NLContactViewController *vc = [[[NLContactViewController alloc] initWithContact:contact] autorelease];
-    [self.navigationController pushViewController:vc animated:YES];
+    UIViewAnimationTransition trasn = UIViewAnimationTransitionDefault___;
+    if (contact) {
+        trasn = UIViewAnimationTransitionFlipFromRight;
+    }
+    [self.navigationController pushViewController:vc withAnimation:trasn];
 }
 
 //

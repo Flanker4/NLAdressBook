@@ -2,7 +2,7 @@
 //  NLContactViewController.m
 //  NLAdressBook
 //
-//  Created by flanker on 19.07.13.
+//  Created by Boyko A.V. on 19.07.13.
 //  Copyright (c) 2013 Neo Line. All rights reserved.
 //
 
@@ -143,6 +143,16 @@
     }
 }
 
+-(void) editNextAttributeAfter:(NLContactAttribute)attribute{
+    if ((attribute>=NLContactAttributeName)&&(attribute<=NLContactAttributePatrName)) {
+        NLEditNameCell *cell = (NLEditNameCell*)[self.tableView cellForRowAtIndexPath:
+                                                 [NSIndexPath indexPathForRow:0 inSection:attribute+1]];
+        if ([cell isKindOfClass:[NLEditNameCell class]]) {
+            [cell.textField becomeFirstResponder];
+        }
+        
+    }
+}
 
 //
 // MARK: - User interaction
@@ -150,7 +160,12 @@
 -(IBAction)pressSave:(id)sender{
     NLAppDelegate *dataProvider = (NLAppDelegate*)[UIApplication sharedApplication].delegate;
     [dataProvider saveContext];
-    [self.navigationController popViewControllerAnimated:YES];
+
+    UIViewAnimationTransition trans = UIViewAnimationTransitionFlipFromLeft;
+    if (_isNew) {
+        trans = UIViewAnimationTransitionDefault___;
+    }
+    [self.navigationController popViewControllerWithAnimation:trans];
 }
 
 

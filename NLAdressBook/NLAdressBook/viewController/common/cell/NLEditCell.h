@@ -2,11 +2,14 @@
 //  NLEditCell.h
 //  NLAdressBook
 //
-//  Created by flanker on 19.07.13.
+//  Created by Boyko A.V. on 19.07.13.
 //  Copyright (c) 2013 Neo Line. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
+//offset of textbox|segment in EditCell
+extern size_t const OFFSET;
 
 typedef NS_ENUM(NSInteger, NLContactAttribute){
     NLContactAttributeName,
@@ -19,6 +22,7 @@ typedef NS_ENUM(NSInteger, NLContactAttribute){
 
 @protocol NLEditCellDelegate <NSObject>
 -(void) didValueChanged:(id)newValue forAttribute:(NLContactAttribute)attribute;
+-(void) editNextAttributeAfter:(NLContactAttribute) attribute;
 @end
 
 //
@@ -38,24 +42,6 @@ typedef NS_ENUM(NSInteger, NLContactAttribute){
 
 
 
-//
-// MARK: - NLEditNameCell
-//
-@interface NLEditNameCell:NLEditCell<UITextFieldDelegate>{
-    UITextField *_textField;
-}
-@end
 
-//
-// MARK: - NLEditPhoneCell
-//
-@interface NLEditPhoneCell:NLEditNameCell
-@end
 
-//
-// MARK: - NLEditMarker
-//
-@interface NLEditMarker:NLEditCell{
-    UISegmentedControl *_segmentController;
-}
-@end
+

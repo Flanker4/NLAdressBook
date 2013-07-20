@@ -21,6 +21,14 @@
 		0E9B4AE8179994350058385C /* NLContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AE7179994350058385C /* NLContactCell.m */; };
 		0E9B4AE9179994350058385C /* NLContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B4AE7179994350058385C /* NLContactCell.m */; };
 		0E9B4AEB179994580058385C /* NLContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9B4AEA179994580058385C /* NLContactCell.xib */; };
+		0EDC08F1179AA9BD0033C125 /* NLEditNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC08F0179AA9BD0033C125 /* NLEditNameCell.m */; };
+		0EDC08F2179AA9BD0033C125 /* NLEditNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC08F0179AA9BD0033C125 /* NLEditNameCell.m */; };
+		0EDC08F6179AAA680033C125 /* NLEditPhoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC08F5179AAA680033C125 /* NLEditPhoneCell.m */; };
+		0EDC08F7179AAA680033C125 /* NLEditPhoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC08F5179AAA680033C125 /* NLEditPhoneCell.m */; };
+		0EDC08FA179AAACC0033C125 /* NLEditMarkerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC08F9179AAACC0033C125 /* NLEditMarkerCell.m */; };
+		0EDC08FB179AAACC0033C125 /* NLEditMarkerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC08F9179AAACC0033C125 /* NLEditMarkerCell.m */; };
+		0EDC08FF179AB01D0033C125 /* UINavigationController+NLAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC08FE179AB01D0033C125 /* UINavigationController+NLAddressBook.m */; };
+		0EDC0900179AB01D0033C125 /* UINavigationController+NLAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC08FE179AB01D0033C125 /* UINavigationController+NLAddressBook.m */; };
 		0EFB290117998A58008BFF29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290017998A58008BFF29 /* UIKit.framework */; };
 		0EFB290317998A58008BFF29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290217998A58008BFF29 /* Foundation.framework */; };
 		0EFB290517998A58008BFF29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB290417998A58008BFF29 /* CoreGraphics.framework */; };
@@ -69,6 +77,15 @@
 		0E9B4AE6179994350058385C /* NLContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLContactCell.h; path = cell/NLContactCell.h; sourceTree = "<group>"; };
 		0E9B4AE7179994350058385C /* NLContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLContactCell.m; path = cell/NLContactCell.m; sourceTree = "<group>"; };
 		0E9B4AEA179994580058385C /* NLContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NLContactCell.xib; path = cell/NLContactCell.xib; sourceTree = "<group>"; };
+		0EDC08EF179AA9BD0033C125 /* NLEditNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLEditNameCell.h; path = cell/NLEditNameCell.h; sourceTree = "<group>"; };
+		0EDC08F0179AA9BD0033C125 /* NLEditNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLEditNameCell.m; path = cell/NLEditNameCell.m; sourceTree = "<group>"; };
+		0EDC08F4179AAA680033C125 /* NLEditPhoneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLEditPhoneCell.h; sourceTree = "<group>"; };
+		0EDC08F5179AAA680033C125 /* NLEditPhoneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLEditPhoneCell.m; sourceTree = "<group>"; };
+		0EDC08F8179AAACC0033C125 /* NLEditMarkerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLEditMarkerCell.h; path = cell/NLEditMarkerCell.h; sourceTree = "<group>"; };
+		0EDC08F9179AAACC0033C125 /* NLEditMarkerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLEditMarkerCell.m; path = cell/NLEditMarkerCell.m; sourceTree = "<group>"; };
+		0EDC08FC179AAC150033C125 /* NLContactAttributeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLContactAttributeCell.h; sourceTree = "<group>"; };
+		0EDC08FD179AB01D0033C125 /* UINavigationController+NLAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+NLAddressBook.h"; path = "NLAdressBook/common/UINavigationController+NLAddressBook.h"; sourceTree = SOURCE_ROOT; };
+		0EDC08FE179AB01D0033C125 /* UINavigationController+NLAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+NLAddressBook.m"; path = "NLAdressBook/common/UINavigationController+NLAddressBook.m"; sourceTree = SOURCE_ROOT; };
 		0EFB28FC17998A58008BFF29 /* NLAdressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLAdressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFB290017998A58008BFF29 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0EFB290217998A58008BFF29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +160,8 @@
 		0E1019AE1799AC860066A6A2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0EDC08FD179AB01D0033C125 /* UINavigationController+NLAddressBook.h */,
+				0EDC08FE179AB01D0033C125 /* UINavigationController+NLAddressBook.m */,
 			);
 			name = Helper;
 			path = ../viewController/common;
@@ -160,8 +179,15 @@
 		0E1019B71799AE1B0066A6A2 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				0EDC08FC179AAC150033C125 /* NLContactAttributeCell.h */,
 				0E1019B81799AE580066A6A2 /* NLEditCell.h */,
 				0E1019B91799AE580066A6A2 /* NLEditCell.m */,
+				0EDC08EF179AA9BD0033C125 /* NLEditNameCell.h */,
+				0EDC08F0179AA9BD0033C125 /* NLEditNameCell.m */,
+				0EDC08F4179AAA680033C125 /* NLEditPhoneCell.h */,
+				0EDC08F5179AAA680033C125 /* NLEditPhoneCell.m */,
+				0EDC08F8179AAACC0033C125 /* NLEditMarkerCell.h */,
+				0EDC08F9179AAACC0033C125 /* NLEditMarkerCell.m */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -415,6 +441,10 @@
 				0E9B4AE8179994350058385C /* NLContactCell.m in Sources */,
 				0E1019B31799ADCE0066A6A2 /* NLContactViewController.m in Sources */,
 				0E1019BB1799AE580066A6A2 /* NLEditCell.m in Sources */,
+				0EDC08F1179AA9BD0033C125 /* NLEditNameCell.m in Sources */,
+				0EDC08F6179AAA680033C125 /* NLEditPhoneCell.m in Sources */,
+				0EDC08FA179AAACC0033C125 /* NLEditMarkerCell.m in Sources */,
+				0EDC08FF179AB01D0033C125 /* UINavigationController+NLAddressBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +455,10 @@
 				0EFB294417998A59008BFF29 /* NLAdressBookTests.m in Sources */,
 				0E9B4AE4179991EC0058385C /* NLContact.m in Sources */,
 				0E9B4AE9179994350058385C /* NLContactCell.m in Sources */,
+				0EDC08F2179AA9BD0033C125 /* NLEditNameCell.m in Sources */,
+				0EDC08F7179AAA680033C125 /* NLEditPhoneCell.m in Sources */,
+				0EDC08FB179AAACC0033C125 /* NLEditMarkerCell.m in Sources */,
+				0EDC0900179AB01D0033C125 /* UINavigationController+NLAddressBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
